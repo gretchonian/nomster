@@ -60,3 +60,6 @@ end
 
 # Add pagination
 gem 'will_paginate', '>= 3.1'
+
+# Add simple form
+gem 'simple_form'
