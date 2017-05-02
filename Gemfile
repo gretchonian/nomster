@@ -66,3 +66,6 @@ gem 'simple_form'
 
 # Add symbols thru awesome fonts
 gem "font-awesome-rails"
+
+# User Authentication
+gem 'devise'
