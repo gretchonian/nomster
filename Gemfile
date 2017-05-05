@@ -69,3 +69,9 @@ gem "font-awesome-rails"
 
 # User Authentication
 gem 'devise'
+
+# Map Coordinates
+gem 'geocoder'
+
+# Added privacey
+gem "figaro"
