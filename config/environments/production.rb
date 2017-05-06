@@ -1,5 +1,5 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: 'nomster-gretchen-j.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'nomster-gretchen-j.herokuapp.com/users/password' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
