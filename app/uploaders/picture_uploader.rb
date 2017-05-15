@@ -1,5 +1,11 @@
 class PictureUploader < CarrierWave::Uploader::Base
+    uploader = PictureUploader.new
 
+    uploader.store!(@photo)
+
+    uploader.retrieve_from_store!(@photo)
+
+ 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick

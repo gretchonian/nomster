@@ -7,21 +7,28 @@ before_action :authenticate_user!
       @place = Place.find(params[:place_id])
       @place.photos.create(photo_params)
       redirect_to place_path(@place)
+#u = User.new
+#u.avatar = params[:file] # Assign a file like this, or
 
+# like this
+#File.open('somewhere') do |f|
+ # u.avatar = f
+#end
+
+#u.save!
+#u.avatar.url # => '/url/to/file.png'
+#u.avatar.current_path # => 'path/to/file.png'
+#u.avataSr_identifier # => 'file.png'
+#Note: u.avatar will never return nil, even if there is no photo associated to it. To check if a photo was saved to the model, use u.avatar.file.nil? instead.
     #You can use your uploader class to store and retrieve files like this:
 
-    #uploader = AvatarUploader.new
-
-    #uploader.store!(my_file)
-
-    #uploader.retrieve_from_store!('my_file.png')
   end
 
 
 private
 
 def photo_params
-  params.require(:photo).permit(:file, :caption)
+  params.require(:photo).permit(:picture, :caption)
    #params.require(:comment).permit(:message, :rating)
 end
 
