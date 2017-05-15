@@ -73,5 +73,8 @@ gem 'devise'
 # Map Coordinates
 gem 'geocoder'
 
-# Added privacey
+# Added privacy
 gem "figaro"
+
+# Upload photos
+gem 'carrierwave', '~>1.0'
