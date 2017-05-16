@@ -78,3 +78,6 @@ gem "figaro"
 
 # Upload photos
 gem 'carrierwave', '~>1.0'
+
+# Continue to upload photos on Heroku and store thru AWS
+gem "fog-aws"
