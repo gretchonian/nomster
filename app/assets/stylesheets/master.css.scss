@@ -5,11 +5,8 @@
 
 body {
   background-image: image_url('topography.png');
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Castamaran', sans-serif;
 }
-
-
-
 
 .booyah-box{
   -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
@@ -51,6 +48,12 @@ h1 h2 h3 h4 h5 h6 {
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
 }
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
 #map {
         height: 300px;
 }
@@ -67,9 +70,18 @@ h1 h2 h3 h4 h5 h6 {
   font-weight: 600;
   font-size: 40px;
 }
-img {
-  width: 100px;
-  height: 100px;
+
+.picture {
+    zoom: 2;
+    width: auto;
+    font-size: 14px;
+    line-height: 1.28571em;
+}
+
+
+
+ul {
+  list-style: none;
 }
 
 

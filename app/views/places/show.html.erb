@@ -71,26 +71,31 @@
     </div>
   </div>
 
-  <div class="col-10 offset-1">
+  <div class="buttonx">
     <h1 class="float-left">Photos</h1>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
     Add a Photo
     </button>
+    <br/>
   </div>
-</div>
 
-<div class="clear"></div>
 <br /> <br />
 
 <!--Display photos-->
-<div class="col-10 offset-1">
-  <% @place.photos.each do |photo| %>
-    <img><%= image_tag photo.picture %></img>
-    <div class="clear"></div>
-    <small><%= photo.caption %></small>
-  <%end%>
+  <ul class="picture">
+    <% @place.photos.each do |photo| %>
+      <li class="arrange_unit">
+        <div class="photo-box pb-60s">
+          <%= image_tag photo.picture %>
+          <small><%= photo.caption %></small>
+        </div>
+      </li>
+      <br/>
+    <%end%>
+  </ul>
 </div>
+ 
     
 
 <!-- Comments Modal -->
