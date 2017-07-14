@@ -1,3 +1,4 @@
+<br/>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -26,12 +27,12 @@
     </a>
   </div> 
 </div>
-
+<br/>
  <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1>
-      <i><%= place.address %></i><br/>
-      <p><%= place.description %></p><br />
+    <i><%= place.address %></i><br/>
+    <p><%= place.description %></p><br />
     
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
@@ -43,7 +44,7 @@
           <% if place.comments.last.humanized_rating.present? %>
             <b><%= place.comments.last.humanized_rating %></b>
           <% end %>
-        <%= place.comments.last.message %>
+          <%= place.comments.last.message %>
           <small><%= place.comments.last.user.email %></small>
         </blockquote>
       </div>
@@ -52,7 +53,7 @@
 <% end %>
 
 <div class="paginate col-10 offset-1">
-<%= will_paginate %>
+  <%= will_paginate %>
 </div>
 
 
